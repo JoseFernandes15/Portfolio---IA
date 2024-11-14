@@ -42,11 +42,9 @@ img:hover{
     font-size: 18px;
     color: #fff;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 img:hover .download{
-    opacity: 1 !important;
     display: block !important;
 }
 
