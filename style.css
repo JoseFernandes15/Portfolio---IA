@@ -38,8 +38,15 @@ img {
     cursor: pointer !important;
 }
 
-.img_container:hover img{
-    opacity: 0.5 !important;
+.download:hover{
+    background-color: transparent;
+    color: black !important;
+    border: 1px solid white !important;
+    transform: scale(1.1) ease !important;
+}
+
+.img:hover {
+    opacity: 0.5 ease !important;
 }
 
 .img_container:hover .download{
