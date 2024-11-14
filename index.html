@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA - Portfolio José Fernandes</title>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Gerative AI, AI, IA, Text-to-Image, Texto-para-Imagem">
+  <meta name="description" content="AI experience">
+  <meta name="author" content="José Pedro Fernandes" />
+  <meta name="referrer" content="same-origin">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a class="portfolio" href="https://josefernandes.pt">Voltar ao portfólio</a>
+        <h1>Cria uma imagem!</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <div class="col-12">
+                    <input id="prompt" type="text" maxlength="30" placeholder="Elefante amarelo">
+                </div>
+                <div class="col-12">
+                    <button id="btn" class="btn inactive">Gerar</button>
+                </div>
+            </form>
+            <img id="image">
+            <div id="loading" style="display:none;">
+                <div class="col-12 loadingContainer">
+                    <div id="spinner"></div>
+                </div>
+                <div class="col-12">
+                    <h4 id="loadingMessage">A carregar imagem...</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
