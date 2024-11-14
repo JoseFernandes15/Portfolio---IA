@@ -6,13 +6,7 @@ body {
     text-align: center;
     color: #d1d1d1;
 }
-
-.img_container {
-    position: relative;
-    overflow: hidden;
-  }
   
-
 div{
     align-content: center;
     align-items: center;
@@ -20,16 +14,16 @@ div{
     text-align: center;
 }
 
+.img_container {
+    position: relative;
+    overflow: hidden;
+  }
+
 img {
     width: 85% !important;
     height: auto !important;
     border-radius: 10px !important;
 }
-
-img:hover{
-    opacity: 0.5 !important;
-}
-
 .download{
     display: none;
     position: absolute;
@@ -44,7 +38,11 @@ img:hover{
     cursor: pointer !important;
 }
 
-img:hover .download{
+.img_container:hover img{
+    opacity: 0.5 !important;
+}
+
+.img_container:hover .download{
     display: block !important;
 }
 
