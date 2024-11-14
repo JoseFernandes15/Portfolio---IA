@@ -28,11 +28,7 @@ img {
 
 img:hover{
     opacity: 0.5 !important;
-}
-
-img:hover .download{
-    opacity: 1!important;
-    display: block!important;
+    cursor: pointer !important;
 }
 
 .download{
@@ -47,6 +43,11 @@ img:hover .download{
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
+}
+
+img:hover .download{
+    opacity: 1 !important;
+    display: block !important;
 }
 
 .container {
