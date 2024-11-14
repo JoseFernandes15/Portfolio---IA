@@ -13,8 +13,10 @@ async function fetchImage() {
       }
     }
     
-    const loading = document.getElementById("loading"); // Presumo que tenha um elemento com id 'loading'
+    const loading = document.getElementById("loading"); 
+    const img_container = document.getElementById("img_container");
     loading.style.display = "block";
+    img_container.style.display = "block";
   
     try {
       const ai_url = "https://gen-i.zepedrofernandessampaio.workers.dev/?" + encodeURIComponent(prompt_ai); // Usando encodeURIComponent para garantir que o prompt seja passado corretamente na URL
@@ -49,6 +51,7 @@ async function fetchImage() {
   // Seleciona os elementos
   const prompt = document.getElementById("prompt");
   const btn = document.getElementById("btn");
+  const download = document.getElementById("download")
   
   // Adiciona um ouvinte de evento para o campo de texto
   prompt.addEventListener("input", function () {
@@ -64,3 +67,19 @@ async function fetchImage() {
     fetchImage();
   });
   
+  download.addEventListener("click", function() {
+    // Caminho da imagem
+    const imagePath = document.getElementById("img").src;
+    // Nome para o download
+    const imageName = "ai-generated.png";
+  
+    // Cria um elemento de link temporário
+    const link = document.createElement("a");
+    link.href = imagePath;
+    link.download = imageName;
+  
+    // Adiciona o link ao documento, clica nele e depois o remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
