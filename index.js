@@ -10,7 +10,7 @@ async function fetchImage() {
     if(document.getElementById("image").src){
       if (confirm("Vais perder esta imagem, tens a certeza?!")) {
         document.getElementById("image").src="";
-        loading.style.display = "none";
+        img_container.style.display = "none";
       } else {
         return; // Cancela a execução da função
       }
@@ -19,7 +19,6 @@ async function fetchImage() {
     const loading = document.getElementById("loading"); 
    
     loading.style.display = "block";
-    img_container.style.display = "block";
   
     try {
       const ai_url = "https://gen-i.zepedrofernandessampaio.workers.dev/?" + encodeURIComponent(prompt_ai); // Usando encodeURIComponent para garantir que o prompt seja passado corretamente na URL
@@ -39,6 +38,7 @@ async function fetchImage() {
 
       // Define o src da imagem e adiciona a animação ao final
       imageElement.src = imageUrl;
+      img_container.style.display = "block";
       imageElement.onload = () => {
         imageElement.classList.add("fade-in-top");
         imageElement.scrollIntoView({ behavior: "smooth", block: "center" });

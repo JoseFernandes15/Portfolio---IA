@@ -46,7 +46,7 @@ img {
 }
 
 .img_container:hover {
-    opacity: 0.5 ease !important;
+    opacity: 0.5;
 }
 
 .img_container:hover .download{
