@@ -5,16 +5,19 @@ async function fetchImage() {
       return; // Cancela a execução da função
     }
 
+    const img_container = document.getElementById("img_container");
+
     if(document.getElementById("image").src){
       if (confirm("Vais perder esta imagem, tens a certeza?!")) {
         document.getElementById("image").src="";
+        loading.style.display = "none";
       } else {
         return; // Cancela a execução da função
       }
     }
     
     const loading = document.getElementById("loading"); 
-    const img_container = document.getElementById("img_container");
+   
     loading.style.display = "block";
     img_container.style.display = "block";
   
