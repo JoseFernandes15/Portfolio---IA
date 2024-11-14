@@ -27,12 +27,12 @@ img {
 }
 
 img:hover{
-    opacity: 0.5;
+    opacity: 0.5 !important;
 }
 
 img:hover .download{
-    opacity: 1;
-    display: block;
+    opacity: 1!important;
+    display: block!important;
 }
 
 .download{
