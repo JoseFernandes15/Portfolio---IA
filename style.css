@@ -15,8 +15,6 @@ div{
 }
 
 .img_container {
-    position: relative;
-    overflow: hidden;
     width: 85% !important;
     height: auto !important;
   }
