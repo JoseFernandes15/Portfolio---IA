@@ -7,7 +7,7 @@ body {
     color: #d1d1d1;
 }
 
-.image-img_container {
+.img_container {
     position: relative;
     overflow: hidden;
   }
@@ -28,7 +28,6 @@ img {
 
 img:hover{
     opacity: 0.5 !important;
-    cursor: pointer !important;
 }
 
 .download{
@@ -42,6 +41,7 @@ img:hover{
     font-size: 18px;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer !important;
 }
 
 img:hover .download{
