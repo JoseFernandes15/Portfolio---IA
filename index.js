@@ -69,7 +69,7 @@ async function fetchImage() {
   
   download.addEventListener("click", function() {
     // Caminho da imagem
-    const imagePath = document.getElementById("img").src;
+    const imagePath = document.getElementById("image").src;
     // Nome para o download
     const imageName = "ai-generated.png";
   
